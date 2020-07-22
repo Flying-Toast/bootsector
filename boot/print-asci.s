@@ -1,10 +1,10 @@
 .code16
 
 .ENTRY:
-	mov $1, %al
+	mov $0, %al
 .TOP:
-	cmp $100, %al
-	jg .END
+	cmp $255, %al
+	je .END
 	call .PUTC
 	inc %al
 	jmp .TOP
