@@ -61,6 +61,7 @@ int main(int argc, char **argv)
 		"-e", "0",
 		"--oformat", "binary",
 		"-o", "/tmp/prog.bin",
+		"-Ttext", "0x7C00",
 		"/tmp/prog.o",
 		(char *) NULL
 	};
