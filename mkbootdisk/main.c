@@ -76,6 +76,8 @@ int main(int argc, char **argv)
 	if (progstat.st_size > 510) {
 		printf("Program can't fit into boot sector\n");
 		return 1;
+	} else {
+		printf("Program binary is %d bytes\n", progstat.st_size);
 	}
 
 	uint8_t bootsect[512] = {0};
