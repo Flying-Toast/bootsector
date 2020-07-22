@@ -1,0 +1,3 @@
+*.o
+mkbootdisk
+output.bin
