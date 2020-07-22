@@ -5,6 +5,8 @@
 .set LINES, 10 # how many lines to print
 
 .entry:
+	mov $0, %ax
+	mov %ax, %ds
 	mov $0xE, %ah
 	mov $0, %cx
 .restart:
