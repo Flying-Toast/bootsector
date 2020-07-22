@@ -1,14 +1,14 @@
 .code16
 
-.ENTRY:
+.entry:
 	mov $0xE, %ah
 	mov $0, %al
-.TOP:
+.top:
 	cmp $255, %al
-	je .END
+	je .end
 	int $0x10
 	inc %al
-	jmp .TOP
+	jmp .top
 
-.END:
-	jmp .END
+.end:
+	jmp .end
